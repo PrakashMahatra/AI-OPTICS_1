@@ -1,1 +1,14 @@
+# === FastAPI server essentials ===
+fastapi==0.95.0
+uvicorn==0.21.1
+python-multipart==0.0.6
+
+# === Core dependencies ===
+numpy==1.24.2
+opencv-python==4.7.0.72
+
+# === PyTorch & Transformers ===
+torch==2.6.0           # Use the correct version for your CUDA 12.4 environment
+transformers==4.28.1
+openai-whisper==20230314
 
