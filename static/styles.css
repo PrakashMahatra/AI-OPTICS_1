@@ -1,0 +1,157 @@
+/* static/styles.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.main-interface {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    flex: 1;
+    background-color: #000;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+#videoElement {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.control-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.chat-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-messages {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    min-height: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.voice-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#startRecording {
+    flex: 1;
+    padding: 15px;
+    background-color: #2ecc71;
+}
+
+#startRecording:hover {
+    background-color: #27ae60;
+}
+
+#startRecording:active {
+    background-color: #e74c3c;
+}
+
+.audio-indicator {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #95a5a6;
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #e8f4fd;
+    text-align: right;
+    margin-left: 20%;
+}
+
+.assistant-message {
+    background-color: #f0f0f0;
+    margin-right: 20%;
+}
+
+.vision-message {
+    background-color: #e8fdea;
+    border-left: 4px solid #27ae60;
+}
+
+.image-preview {
+    max-width: 200px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-interface {
+        flex-direction: column;
+    }
+}
